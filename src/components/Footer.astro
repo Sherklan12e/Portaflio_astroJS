@@ -1,0 +1,12 @@
+---
+import Mainlayout from '../layouts/Mainlayout.astro';
+
+---
+<footer class="text-center mt-auto py-4">
+    <small>Copyright copy: <span id="copyright">|all rightsreserve</span>|all rightsreserve</small>
+</footer>
+
+<script>
+document.querySelector('#copyright').textContent = new Date().getFullYear().toString();
+</script>
+
